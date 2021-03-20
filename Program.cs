@@ -13,6 +13,12 @@ namespace DotnetPractice
             //For instance member we have to create object, then we can access this.
             Circle cs = new Circle();
             double myRadious = cs._radious;
+
+            DerivedClass dc = new DerivedClass();
+            Console.WriteLine(dc.Perimeter);
+            ParentClass pc = new ParentClass(4);
+            
         }
+
     }
 }

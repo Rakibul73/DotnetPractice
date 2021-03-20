@@ -6,7 +6,13 @@ namespace DotnetPractice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //For Static Member PI, we can access without creating object.
+
+            double myPi = Circle.pi;
+
+            //For instance member we have to create object, then we can access this.
+            Circle cs = new Circle();
+            double myRadious = cs._radious;
         }
     }
 }
